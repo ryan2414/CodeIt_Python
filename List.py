@@ -18,7 +18,7 @@ print(len(numbers))
 numbers.append(3)
 print(numbers)
 
-# 삭제
+# 삭제 > index 가 줄어든다
 del  numbers[1]
 print(numbers)
 
