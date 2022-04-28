@@ -1,6 +1,6 @@
-# cil 모듈을 임포트해 주세요
+# _cil 모듈을 임포트해 주세요
 import cil
-# cil 모듈의 display 함수를 직접 임포트해 주세요
+# _cil 모듈의 display 함수를 직접 임포트해 주세요
 from cil import display
 
 img1 = cil.read_image('img1')
@@ -23,5 +23,5 @@ display(inverted_img2)
 
 # 채점 코드
 print()
-print('cil' in dir())
+print('_cil' in dir())
 print('display' in dir())

@@ -1,7 +1,7 @@
 # utils 모듈의 'read_image' 함수와 'display' 함수를 임포트해 주세요
-from cil.utils import read_image, display
+from _cil.utils import read_image, display
 # processing 모듈의 'invert' 함수를 'inv'로 임포트하고 'merge' 함수를 'mrg'로 임포트해 주세요
-from  cil.processing import invert as inv, merge as mrg
+from  _cil.processing import invert as inv, merge as mrg
 
 logo = read_image('codeit_logo')
 inverted_logo = inv(logo)
