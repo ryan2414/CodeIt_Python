@@ -10,8 +10,14 @@ def merge(list1, list2):
             merge_list.append(list2[j])
             j += 1
 
-    # 남은 값들을 더해준다
-    merge_list = merge_list + list1[i:] + list2[j:]
+        # list2에 남은 항목이 있으면 정렬 리스트에 추가
+        if i == len(list1):
+            merge_list += list2[j:]
+
+        # list1에 남은 항목이 있으면 정렬 리스트에 추가
+        elif j == len(list2):
+            merge_list += list1[i:]
+
     return merge_list
 
 
